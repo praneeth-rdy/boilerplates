@@ -1,11 +1,4 @@
-interface Logger {
-    log: (...args: any[]) => void;
-    info: (...args: any[]) => void;
-    warn: (...args: any[]) => void;
-    error: (...args: any[]) => void;
-}
-
-const logger: Logger = {
+const logger = {
     log: (...args) => {
         console.log('[LOG]:', ...args);
     },
